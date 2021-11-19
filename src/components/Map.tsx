@@ -6,21 +6,37 @@ const markers = [
     {
         id: 1,
         name: 'Chicago, Illinois',
+        item: 'Carrot',
+        qty: 12,
+        rating: 5,
+        review_count: 15,
         position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 2,
-        name: 'Denver, Colorado',
+        name: 'Chicago, Illinois',
+        item: 'Carrot',
+        qty: 12,
+        rating: 5,
+        review_count: 15,
         position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 3,
-        name: 'Los Angeles, California',
+        name: 'Chicago, Illinois',
+        item: 'Carrot',
+        qty: 12,
+        rating: 5,
+        review_count: 15,
         position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 4,
-        name: 'New York, New York',
+        name: 'Chicago, Illinois',
+        item: 'Carrot',
+        qty: 12,
+        rating: 5,
+        review_count: 15,
         position: { lat: 11.0168445, lng: 76.9558321 }
     }
 ];
@@ -47,11 +63,18 @@ const Map = () => {
             onLoad={handleOnLoad}
             onClick={() => setActiveMarker(null)}
             mapContainerStyle={{ width: '100vw', height: '100vh' }}>
-            {markers.map(({ id, name, position }) => (
+            {markers.map(({ id, name, position, item, qty, rating, review_count }) => (
                 <Marker key={id} position={position} onClick={() => handleActiveMarker(id)}>
                     {activeMarker === id ? (
                         <InfoWindow onCloseClick={() => setActiveMarker(null)}>
-                            <div>{name}</div>
+                            <>
+                                <div>{name}</div>
+                                <div>{item}</div>
+                                <div>{qty}</div>
+                                <div>{rating}</div>
+                                <div>{review_count}</div>
+                                <div>{review_count}</div>
+                            </>
                         </InfoWindow>
                     ) : null}
                 </Marker>
