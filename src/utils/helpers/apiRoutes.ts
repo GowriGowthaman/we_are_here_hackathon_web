@@ -2,6 +2,7 @@ import * as HttpMethods from 'utils/constants/method';
 
 export const apiRoutes = {
     searchData: { apiPath: '/v0/s/:survaleID', action: HttpMethods.GET },
+    login: { apiPath: '/v0/s/:survaleID', action: HttpMethods.POST },
 
     survaleData: { apiPath: '/v0/s/:survaleID', action: HttpMethods.GET },
     survaleDataDetail: { apiPath: '/v0/s/:survaleID/:survaleDetailId', action: HttpMethods.GET },
