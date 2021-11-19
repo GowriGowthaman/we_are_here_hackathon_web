@@ -5,6 +5,7 @@ import { store } from 'react-notifications-component';
 import { useDispatch } from 'react-redux';
 
 import { GoogleApp } from 'components/GoogleMap';
+import { Login } from 'components/Login';
 import { useDebounce } from 'hooks';
 import { searchDataSaga } from 'store/actions/searchData';
 // import { storeTypes } from 'types/store';
@@ -69,6 +70,7 @@ const Home = () => {
             </Head>
             <div className="container-fluid">
                 <GoogleApp />
+                <Login />
             </div>
         </>
     );

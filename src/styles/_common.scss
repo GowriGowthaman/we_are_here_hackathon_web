@@ -18,6 +18,28 @@
     font-size: 20px;
 }
 
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.form-control {
+    background-color: #f6f8fa !important;
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $primary;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(104, 159, 104, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(104, 159, 104, 0.25);
+}
 @keyframes spin {
     0% {
         transform: rotate(0deg);
