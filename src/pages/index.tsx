@@ -2,6 +2,8 @@ import React from 'react';
 
 import Head from 'next/head';
 
+import { GoogleApp } from 'components/GoogleMap';
+
 const Home = () => {
     return (
         <>
@@ -11,7 +13,9 @@ const Home = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className="container-fluid">Test</div>
+            <div className="container-fluid">
+                <GoogleApp />
+            </div>
         </>
     );
 };
