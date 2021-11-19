@@ -1,4 +1,3 @@
-import { survaleDataTypes } from 'types/store/survaleData';
 import { languageCodes } from 'utils/constants/languageCodes';
 
 /**
@@ -31,20 +30,6 @@ export const removeWhiteSpaces = (string: string | any) => {
 };
 
 /**
- * Current Question Position
- * @param questions
- * @param currentQuestion
- */
-export const currentQuestionPlace = (
-    questions: survaleDataTypes.IQuestionData[],
-    currentQuestion: survaleDataTypes.IQuestionData | null
-) => {
-    if (questions.length !== 0 && currentQuestion !== null) {
-        return questions.findIndex((question) => question.questionId === currentQuestion.questionId);
-    }
-};
-
-/**
  * Simple deep copy with JSON.parse and JSON.stringify except the method copy of the source object to target object
  *
  * @param value T
@@ -55,45 +40,6 @@ export const simpleDeepCopy = <T>(value: T): T => {
         return JSON.parse(JSON.stringify(value));
     } catch (e) {
         return value;
-    }
-};
-
-/**
- * Current Questions Replace and New Question Placed
- * @param survaleData
- * @param currentQuestion
- * @param payload
- */
-export const currentQuestionRePlace = (
-    survaleData: survaleDataTypes.ISurvaleDataDetails | null,
-    currentQuestion: survaleDataTypes.IQuestionData | null,
-    payload: string
-) => {
-    if (survaleData !== null && currentQuestion !== null) {
-        const survalDataCopy = simpleDeepCopy(survaleData);
-        const currentQuestionCopy = simpleDeepCopy(currentQuestion);
-        const survalDataQuestions = survalDataCopy?.questions || [];
-
-        let newQuestion = null;
-        if (survalDataQuestions.length !== 0) {
-            const existCurrentQuestionIndex = survalDataCopy?.questions?.findIndex(
-                (question) => question.questionId === currentQuestion.questionId
-            );
-            survalDataQuestions[existCurrentQuestionIndex] = currentQuestionCopy;
-
-            if (payload === 'NEXT') {
-                const checkIfNextData = survalDataQuestions[existCurrentQuestionIndex + 1];
-                newQuestion = checkIfNextData !== undefined ? survalDataQuestions[existCurrentQuestionIndex + 1] : null;
-            } else {
-                newQuestion =
-                    existCurrentQuestionIndex === 0 ? null : survalDataQuestions[existCurrentQuestionIndex - 1];
-            }
-        }
-
-        return {
-            newQuestion,
-            survalDataCopy
-        };
     }
 };
 

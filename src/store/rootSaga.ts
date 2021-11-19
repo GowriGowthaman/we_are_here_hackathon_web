@@ -1,9 +1,9 @@
 import { all, fork } from 'redux-saga/effects';
 
-import { takeVerifySiteCaptchaRequest } from './sagas/verifySiteCaptchaSaga';
+import { takeSearchDataRequest } from './sagas/searchDataSaga';
 
 const rootSaga = function* () {
-    yield all([fork(takeVerifySiteCaptchaRequest)]);
+    yield all([fork(takeSearchDataRequest)]);
 };
 
 export { rootSaga };

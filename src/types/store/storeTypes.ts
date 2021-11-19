@@ -1,5 +1,5 @@
-import { verifySiteCaptchaTypes } from 'types/store/verifySiteCaptcha';
+import { searchDataTypes } from './searchData';
 
 export interface IStore {
-    verifySiteCaptcha: verifySiteCaptchaTypes.IVerifySiteCaptcha;
+    searchDataState: searchDataTypes.ISearchData;
 }

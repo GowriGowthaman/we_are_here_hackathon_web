@@ -7,6 +7,7 @@ export type IApiConfig = {
     data?: any;
     params?: any;
     portal?: string | null;
+    cancelToken?: any;
 };
 
 export interface IDefaultHeaders {

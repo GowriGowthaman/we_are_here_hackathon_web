@@ -1,6 +1,8 @@
 import * as HttpMethods from 'utils/constants/method';
 
 export const apiRoutes = {
+    searchData: { apiPath: '/v0/s/:survaleID', action: HttpMethods.GET },
+
     survaleData: { apiPath: '/v0/s/:survaleID', action: HttpMethods.GET },
     survaleDataDetail: { apiPath: '/v0/s/:survaleID/:survaleDetailId', action: HttpMethods.GET },
     survaleDetail: { apiPath: '/v0/sd/:survaleDetailId', action: HttpMethods.GET },

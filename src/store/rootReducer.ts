@@ -2,10 +2,10 @@ import { combineReducers } from 'redux';
 
 import { storeTypes } from 'types/store';
 
-import { verifySiteCaptchaSlice } from './reducers/verifySiteCaptchaSlice';
+import { searchDataSlice } from './reducers/searchDataSlice';
 
 const appReducer = combineReducers<storeTypes.IStore>({
-    verifySiteCaptcha: verifySiteCaptchaSlice.reducer // verifySiteCaptcha
+    searchDataState: searchDataSlice.reducer // verifySiteCaptcha
 });
 
 const rootReducer = (state: any, action: any) => {

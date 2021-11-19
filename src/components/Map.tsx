@@ -6,22 +6,22 @@ const markers = [
     {
         id: 1,
         name: 'Chicago, Illinois',
-        position: { lat: 41.881832, lng: -87.623177 }
+        position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 2,
         name: 'Denver, Colorado',
-        position: { lat: 39.739235, lng: -104.99025 }
+        position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 3,
         name: 'Los Angeles, California',
-        position: { lat: 34.052235, lng: -118.243683 }
+        position: { lat: 11.0168445, lng: 76.9558321 }
     },
     {
         id: 4,
         name: 'New York, New York',
-        position: { lat: 40.712776, lng: -74.005974 }
+        position: { lat: 11.0168445, lng: 76.9558321 }
     }
 ];
 
@@ -43,6 +43,7 @@ const Map = () => {
 
     return (
         <GoogleMap
+            zoom={10}
             onLoad={handleOnLoad}
             onClick={() => setActiveMarker(null)}
             mapContainerStyle={{ width: '100vw', height: '100vh' }}>

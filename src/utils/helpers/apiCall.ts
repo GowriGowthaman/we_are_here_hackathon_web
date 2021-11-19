@@ -13,6 +13,7 @@ export const apiCall = async (apiConfig: commonApiTypes.IApiConfig, promisePaylo
             data: apiConfig.data,
             headers: apiConfig.headers ? apiConfig.headers : defaultHeader(),
             params: apiConfig.params,
+            cancelToken: apiConfig.cancelToken,
             timeout: 0,
             validateStatus(status: number) {
                 // If user un authorized
