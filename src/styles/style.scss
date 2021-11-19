@@ -1,0 +1,628 @@
+@import './font';
+
+body {
+    @include font_include;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.primary-section {
+    min-height: 550px;
+    position: relative;
+    margin-bottom: 20px;
+    border: 2px solid #9d9d9d;
+    border-radius: 10px;
+    background: hsla(0, 0%, 90%, 0.85);
+
+    .title > h1 {
+        font-size: 36px !important;
+    }
+}
+
+button {
+    font-size: 14px !important;
+}
+
+.button-wrap {
+    padding: 10px 0 68px;
+}
+
+.home {
+    h1 {
+        color: #0e0e0e;
+        font-size: 2.22rem;
+        font-weight: 500;
+    }
+}
+
+.ck-content {
+    padding: 10px 20px !important;
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    a:focus,
+    a:hover {
+        color: #23527c;
+        text-decoration: underline;
+    }
+
+    p {
+        text-align: left;
+    }
+    .image.image_resized {
+        max-width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .image {
+        display: table;
+        clear: both;
+        text-align: center;
+        margin: 1em auto;
+    }
+
+    .image.image_resized img {
+        width: 100%;
+    }
+
+    .image > img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        min-width: 50px;
+    }
+}
+
+.start-survey {
+    bottom: 50%;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+.footer {
+    font-size: 12px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+.footer-logo {
+    bottom: 20%;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+}
+
+.btn:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    box-shadow: none;
+    border-color: #8c8c8c;
+}
+
+.like {
+    font-size: 13px;
+    .not-like {
+        color: red;
+    }
+    .extremely-like {
+        color: green;
+    }
+}
+
+// Rating Styles
+.rating-1-10 {
+    .rating-1,
+    .button1:hover {
+        background-color: #ed462f !important;
+    }
+    .rating-2,
+    .button2:hover {
+        background-color: #ef6030 !important;
+    }
+    .rating-3,
+    .button3:hover {
+        background-color: #f28931 !important;
+    }
+    .rating-4,
+    .button4:hover {
+        background-color: #f7b232 !important;
+    }
+    .rating-5,
+    .button5:hover {
+        background-color: #fbce33 !important;
+    }
+
+    .rating-6,
+    .button6:hover {
+        background-color: #fee633 !important;
+    }
+
+    .rating-7,
+    .button7:hover {
+        background-color: #fef733 !important;
+    }
+
+    .rating-8,
+    .button8:hover {
+        background-color: #d5f434 !important;
+    }
+
+    .rating-9,
+    .button9:hover {
+        background-color: #a2f11d !important;
+    }
+
+    .rating-10,
+    .button10:hover {
+        background-color: #6ae407 !important;
+    }
+
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        box-shadow: none;
+        color: #333;
+        border-color: #8c8c8c;
+    }
+
+    // .btn,
+    // .btn:focus {
+    //     //box-shadow: none !important;
+    // }
+    .btn-outline-primary {
+        border-color: #ccc !important;
+    }
+    button {
+        background-color: white;
+        height: 25px;
+        width: 30px;
+    }
+}
+.graphic-face-1-10 {
+    span:hover {
+        cursor: pointer;
+    }
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family: EmojiSymbols;
+        line-height: 1;
+        text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+    }
+    .face-1:hover,
+    .face-1-selected {
+        color: rgb(237, 70, 47);
+    }
+    .face-2:hover,
+    .face-2-selected {
+        color: rgb(239, 96, 48);
+    }
+    .face-3:hover,
+    .face-3-selected {
+        color: rgb(242, 137, 49);
+    }
+
+    .face-4:hover,
+    .face-4-selected {
+        color: rgb(247, 178, 50);
+    }
+
+    .face-5:hover,
+    .face-5-selected {
+        color: rgb(251, 206, 51);
+    }
+
+    .face-6:hover,
+    .face-6-selected {
+        color: rgb(254, 230, 51);
+    }
+
+    .face-7:hover,
+    .face-7-selected {
+        color: rgb(254, 247, 51);
+    }
+
+    .face-8:hover,
+    .face-8-selected {
+        color: rgb(213, 244, 52);
+    }
+
+    .face-9:hover,
+    .face-9-selected {
+        color: rgb(162, 241, 29);
+    }
+
+    .face-10:hover,
+    .face-10-selected {
+        color: rgb(106, 228, 7);
+    }
+}
+
+.rating-1-5 {
+    .rating-1,
+    .button1:hover {
+        background-color: #ed462f !important;
+    }
+    .rating-2,
+    .button2:hover {
+        background-color: #f7b232 !important;
+    }
+    .rating-3,
+    .button3:hover {
+        background-color: #fef733 !important;
+    }
+    .rating-4,
+    .button4:hover {
+        background-color: #a2f11d !important;
+    }
+    .rating-5,
+    .button5:hover {
+        background-color: #6ae407 !important;
+    }
+
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        box-shadow: none;
+        color: #333;
+        border-color: #8c8c8c;
+    }
+
+    // .btn,
+    // .btn:focus {
+    //     //box-shadow: none !important;
+    // }
+    .btn-outline-primary {
+        border-color: #ccc !important;
+    }
+    button {
+        background-color: white;
+        height: 25px;
+        width: 20px;
+    }
+}
+.graphic-face-1-5 {
+    span:hover {
+        cursor: pointer;
+    }
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family: EmojiSymbols;
+        line-height: 1;
+        text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+    }
+    .face-1:hover,
+    .face-1-selected {
+        color: rgb(237, 70, 47);
+    }
+    .face-2:hover,
+    .face-2-selected {
+        color: rgb(247, 178, 50);
+    }
+    .face-3:hover,
+    .face-3-selected {
+        color: rgb(254, 247, 51);
+    }
+
+    .face-4:hover,
+    .face-4-selected {
+        color: rgb(162, 241, 29);
+    }
+
+    .face-5:hover,
+    .face-5-selected {
+        color: rgb(106, 228, 7);
+    }
+}
+
+.rating-1-3 {
+    .rating-1,
+    .button1:hover {
+        background-color: #ed462f !important;
+    }
+    .rating-2,
+    .button2:hover {
+        background-color: #fee633 !important;
+    }
+    .rating-3,
+    .button3:hover {
+        background-color: #6ae407 !important;
+    }
+
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        box-shadow: none;
+        color: #333;
+        border-color: #8c8c8c;
+    }
+
+    // .btn,
+    // .btn:focus {
+    //     //box-shadow: none !important;
+    // }
+    .btn-outline-primary {
+        border-color: #ccc !important;
+    }
+    button {
+        background-color: white;
+        height: 25px !important;
+        width: 30px;
+    }
+}
+.graphic-face-1-3 {
+    span:hover {
+        cursor: pointer;
+    }
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        font-family: EmojiSymbols;
+        line-height: 1;
+        text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+    }
+    .face-1:hover,
+    .face-1-selected {
+        color: rgb(237, 70, 47);
+    }
+    .face-2:hover,
+    .face-2-selected {
+        color: rgb(254, 230, 51);
+    }
+    .face-3:hover,
+    .face-3-selected {
+        color: rgb(106, 228, 7);
+    }
+}
+
+.rating {
+    .rating-1,
+    .button1:hover {
+        background-color: rgb(237, 70, 47) !important;
+    }
+    .rating-2,
+    .button2:hover {
+        background-color: rgb(247, 178, 50);
+    }
+    .rating-3,
+    .button3:hover {
+        background-color: rgb(254, 247, 51);
+    }
+    .rating-4,
+    .button4:hover {
+        background-color: rgb(162, 241, 29);
+    }
+    .rating-5,
+    .button5:hover {
+        background-color: rgb(106, 228, 7);
+    }
+
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        box-shadow: none;
+        color: #333;
+        border-color: #8c8c8c;
+    }
+
+    .btn-outline-primary {
+        border-color: #ccc !important;
+    }
+    button {
+        background-color: white;
+        height: 30px;
+        width: 50px;
+    }
+}
+
+//Question Type Styles
+.questions {
+    .title > h3 {
+        font-size: 24px !important;
+    }
+
+    .sub-title {
+        color: #333333;
+        font-size: 16px !important;
+    }
+
+    .scale-type {
+        color: #333333;
+        font-size: 11px;
+        font-style: italic;
+    }
+
+    .row-label {
+        color: #333;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .matrix-question {
+        .label_column {
+            font-size: 11px;
+            font-weight: bold;
+            color: #333;
+        }
+        th {
+            vertical-align: middle;
+        }
+    }
+}
+
+//Buttton NA
+.btn-na {
+    .btn {
+        //box-shadow: none;
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc !important;
+    }
+    .btn:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        //outline-offset: 2px;
+        box-shadow: none;
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #8c8c8c;
+    }
+    .btn:hover {
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+}
+
+//Multiple CheckBox
+.multiple-choice {
+    .btn {
+        // min-width: 175px !important;
+        border-radius: 0.25rem !important;
+        min-width: -webkit-fill-available;
+        justify-content: space-evenly;
+    }
+
+    .btn-group.btn-block {
+        display: flex;
+    }
+    .btn-group.btn-block > .btn {
+        flex: 1;
+    }
+}
+
+.multiple-choice-radio-button {
+    .btn {
+        width: 30px !important;
+        height: 30px !important;
+        text-align: center;
+        padding: 4px 0;
+        font-size: 12px;
+        line-height: 1.42;
+        border-radius: 50px !important;
+    }
+}
+
+.multiple-choice-checkbox-button {
+    .btn {
+        width: 30px !important;
+        height: 30px !important;
+        text-align: center;
+        padding: 4px 0;
+        font-size: 12px;
+        line-height: 1.42;
+    }
+}
+
+// net-promote-score
+.net-promote-score {
+    .btn {
+        height: 35px;
+        font-weight: 500;
+        padding: 3px;
+        color: #333;
+    }
+    .btn:hover,
+    .btn:focus,
+    .nps-active {
+        box-shadow: none;
+        color: #333;
+        background-color: #e6e6e6;
+        border-color: #adadad;
+    }
+}
+
+// Graphic Face
+
+.graphic-face {
+    span:hover {
+        cursor: pointer;
+    }
+    span {
+        color: rgb(255, 255, 255);
+        font-size: 80px;
+        font-family: EmojiSymbols;
+        line-height: 1;
+        text-shadow: -1px -1px 0 #ccc, 1px -1px 0 #ccc, -1px 1px 0 #ccc, 1px 1px 0 #ccc;
+    }
+    .face-1:hover,
+    .face-1-selected {
+        color: rgb(237, 70, 47);
+    }
+    .face-2:hover,
+    .face-2-selected {
+        color: rgb(254, 230, 51);
+    }
+    .face-3:hover,
+    .face-3-selected {
+        color: rgb(106, 228, 7);
+    }
+}
+
+//submit-question
+.submit-question {
+    span {
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: #333;
+    }
+}
+
+.thank-you {
+    span {
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: #333;
+    }
+}
+
+.progress {
+    height: 0.5rem !important;
+}
+.hide {
+    display: none;
+}
+.asterisk-red {
+    font-size: 16px;
+    color: #ed462f;
+}
+
+.asterisk-black {
+    font-size: 16px;
+    color: #000000;
+}
+
+.required-answer {
+    font-style: italic;
+    color: #ed462f;
+    font-size: 12px;
+}
+
+.intro-box {
+    margin: 0 35px;
+    background-color: #fff;
+    border-radius: 7px;
+    min-height: 200px;
+    .intro-para {
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+    }
+}
+
+.border-radius-100 {
+    border-radius: 100% !important;
+}
+
+.languages {
+    padding-top: 0.5rem;
+    .lang-title {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .lang-value {
+        font-size: 11px;
+        font-style: italic;
+    }
+}

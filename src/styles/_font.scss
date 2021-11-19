@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+$font__nunito: 'Nunito Sans', sans-serif;
+$font__helvetica: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+@font-face {
+    font-family: 'EmojiSymbols';
+    src: url('font/EmojiSymbols-Regular.woff') format('woff'), url('font/EmojiSymbols-Regular.woff') format('woff');
+}
+
+@mixin font_include {
+    font-family: $font__helvetica !important;
+}
+
+@mixin font_emoji_include {
+    font-family: 'EmojiSymbols' !important;
+}

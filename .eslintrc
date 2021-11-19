@@ -1,0 +1,130 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier", "unused-imports", "no-loops"],
+    "extends": [
+        "next",
+        "next/core-web-vitals",
+        "airbnb",
+        "airbnb/hooks",
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings",
+        "plugin:import/typescript",
+        "plugin:prettier/recommended"
+    ],
+    "env": {
+        "es6": true,
+        "browser": true,
+        "jest": true,
+        "node": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "react/no-danger": 0,
+        "react/require-default-props": 0,
+        "unused-imports/no-unused-imports": "error",
+        "prettier/prettier": "error",
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "react/jsx-props-no-spreading": 0,
+        "jsx-a11y/mouse-events-have-key-events": 0,
+        "jsx-a11y/tabindex-no-positive": 0,
+        "jsx-a11y/anchor-is-valid": 0,
+        "react/react-in-jsx-scope": 0,
+        "react/display-name": 0,
+        "react/prop-types": 0,
+        "camelcase": 0,
+        "func-names": ["error", "always", { "generators": "never" }],
+        "@typescript-eslint/explicit-function-return-type": 0,
+        "@typescript-eslint/explicit-member-accessibility": 0,
+        "@typescript-eslint/indent": 0,
+        "@typescript-eslint/member-delimiter-style": 0,
+        "@typescript-eslint/no-explicit-any": 0,
+        "@typescript-eslint/no-var-requires": 0,
+        "no-use-before-define": 0,
+        "no-nested-ternary": 0,
+        "react/no-array-index-key": 0,
+        "consistent-return": 0,
+        "@typescript-eslint/no-use-before-define": 0,
+        "import/extensions": ["error", "never", { "svg": "always" }],
+        "import/no-cycle": 0,
+        "react/no-unescaped-entities": 0,
+        "jsx-a11y/label-has-associated-control": 0,
+        "react/no-unused-prop-types": 0,
+        "@typescript-eslint/no-unused-vars": [
+            2,
+            {
+                "argsIgnorePattern": "^_"
+            }
+        ],
+        "no-console": [
+            2,
+            {
+                "allow": ["warn", "error"]
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal"],
+                "pathGroups": [
+                    {
+                        "pattern": "react",
+                        "group": "external",
+                        "position": "before"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["react"],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ],
+        "semi": 0,
+        "no-shadow": 2,
+        "radix": 0,
+        "no-sparse-arrays": 2,
+        "no-duplicate-imports": 2,
+        "no-redeclare": 1,
+        "arrow-parens": 2,
+        "arrow-body-style": 0,
+        "curly": 2,
+        "no-trailing-spaces": [2, { "skipBlankLines": true }],
+        "no-restricted-imports": 0,
+        "no-loops/no-loops": 2,
+        "func-style": ["error", "expression", { "allowArrowFunctions": true }],
+        "import/prefer-default-export": "off",
+        "prefer-template": 2,
+        "max-lines": [
+            0,
+            {
+                "max": 300,
+                "skipComments": true,
+                "skipBlankLines": true
+            }
+        ],
+        "react/jsx-pascal-case": 2,
+        "@typescript-eslint/naming-convention": [
+            "error",
+            {
+                "selector": "interface",
+                "format": ["PascalCase"],
+                "custom": {
+                    "regex": "^I[A-Z]",
+                    "match": true
+                }
+            }
+        ]
+    }
+}
