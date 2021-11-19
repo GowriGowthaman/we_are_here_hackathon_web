@@ -1,0 +1,50 @@
+.color-primary {
+    color: $primary;
+}
+
+.bgd-primary {
+    background-color: $primary;
+}
+
+.bdr-primary {
+    border-color: $primary;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid $primary; /* Blue */
+    border-bottom: 10px solid $primary; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+.black_bg {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

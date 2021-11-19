@@ -1,4 +1,6 @@
 @import './font';
+@import './color/color';
+@import './login';
 
 body {
     @include font_include;
@@ -7,6 +9,7 @@ body {
     color: #333;
     background-color: #fff;
 }
+
 .primary-section {
     min-height: 550px;
     position: relative;
